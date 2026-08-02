@@ -1,0 +1,39 @@
+/* Future Proof Works v3 — Methodology Edition */
+.methodology-section{padding:4.5rem 0;border-bottom:1px solid var(--line)}
+.methodology-intro{display:grid;grid-template-columns:52px minmax(0,1fr);gap:1.5rem;margin-bottom:2.5rem}
+.methodology-loop{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.method-step{position:relative;padding:2rem 1.5rem 2.25rem;border-right:1px solid var(--line);min-height:230px}
+.method-step:last-child{border-right:0}
+.method-step::before{content:"";position:absolute;left:1.5rem;top:-5px;width:9px;height:9px;border-radius:50%;background:var(--rust)}
+.method-step::after{content:"→";position:absolute;right:-.7rem;top:50%;z-index:2;width:1.4rem;height:1.4rem;display:grid;place-items:center;background:var(--vellum);color:var(--deep);font-family:var(--mono);font-size:.8rem}
+.method-step:last-child::after{content:"↺";right:1rem;top:auto;bottom:1rem;background:transparent;color:var(--rust)}
+.method-number{font-family:var(--mono);font-size:.66rem;color:var(--rust);letter-spacing:.06em}
+.method-step h3{margin:.8rem 0 .8rem;font-size:1.75rem}
+.method-step p{margin:0;color:var(--muted);max-width:23ch}
+.method-note{margin:2rem 0 0;max-width:760px;font-size:1.15rem;color:var(--deep)}
+.investigation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:2rem}
+.investigation-card{background:var(--vellum);padding:1.6rem;min-height:230px;transition:background .2s}
+.investigation-card:hover{background:var(--panel)}
+.investigation-card h3{font-size:1.55rem;margin:.25rem 0 .5rem}
+.investigation-card .thesis{margin-bottom:.8rem}
+.investigation-card .text-link{margin-top:.5rem}
+.publication-feed{border-top:1px solid var(--line)}
+.publication-item{display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:1.25rem;align-items:start;padding:1.35rem 0;border-bottom:1px solid var(--line)}
+.publication-item h3{font-size:1.35rem;margin:0 0 .35rem}
+.publication-item p{margin:0;color:var(--muted)}
+.publication-source{font-family:var(--mono);font-size:.65rem;color:var(--deep);text-transform:uppercase}
+.repo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:1.5rem}
+.repo-card{display:block;background:var(--vellum);padding:1.4rem;text-decoration:none;min-height:175px}
+.repo-card:hover{background:var(--panel)}
+.repo-card h2{font-size:1.75rem;margin:.2rem 0 .55rem}
+.repo-card p{color:var(--muted);margin-bottom:.75rem}
+.repo-card .record{margin-bottom:0}
+.desk-note{max-width:560px}
+.desk-label{font-family:var(--sans);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin-bottom:.35rem}
+.desk-quote{font-family:var(--serif);font-size:.92rem;line-height:1.45;color:var(--deep);margin:0}
+.desk-attribution{font-family:var(--mono);font-size:.62rem;color:var(--muted);margin:.3rem 0 0}
+.lifecycle-line{font-family:var(--mono);font-size:.68rem;color:var(--deep);letter-spacing:.04em;margin-top:1.5rem}
+.publication-filters{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.5rem 0 2rem}
+.publication-filters span{border:1px solid var(--line);padding:.42rem .65rem;font-family:var(--sans);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:900px){.methodology-loop{grid-template-columns:1fr 1fr}.method-step:nth-child(2){border-right:0}.method-step:nth-child(-n+2){border-bottom:1px solid var(--line)}.method-step::after{display:none}.investigation-grid,.repo-grid{grid-template-columns:1fr}.publication-item{grid-template-columns:105px 1fr}.publication-item .text-link{grid-column:2}}
+@media(max-width:650px){.methodology-intro{grid-template-columns:1fr}.methodology-loop{grid-template-columns:1fr}.method-step{border-right:0;border-bottom:1px solid var(--line);min-height:0}.method-step:last-child{border-bottom:0}.publication-item{grid-template-columns:1fr}.publication-item .text-link{grid-column:1}}
