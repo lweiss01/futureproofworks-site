@@ -1,37 +1,39 @@
-# Future Proof Works v2
+# Future Proof Works Website
 
-A book-first static site based on the **1B Vellum & Deep Water** identity direction.
+This repository contains the source code for the Future Proof Works website.
 
-## Identity
+🌐 https://futureproofworks.com
 
-- Vellum `#F5F2EA`
-- Linen `#E3DCCB`
-- Deep Water `#1F4E64`
-- Marginalia `#B4501F`
-- Ink `#141A1E`
-- Spectral for editorial voice
-- Archivo for navigation, metadata, and system labels
-
-## Deploy to GitHub Pages
-
-Replace the current repository files with this package, then:
-
-```powershell
-git add .
-git commit -m "Redesign Future Proof Works around 1B identity"
-git push
-```
-
-GitHub Pages will redeploy automatically.
+The site is a static HTML, CSS, and JavaScript website that presents the research, investigations, publications, workshop, and philosophy of Future Proof Works.
 
 ## Site structure
 
-- Foreword
-- Questions
-- Investigations
-- Field Notes
-- Publications
-- Workshop
-- About
+- `index.html` – Homepage
+- `methodology.html` – The Future Proof Works methodology
+- `investigations.html` – Active investigations
+- `publications.html` – Books, essays, software releases, and other published work
+- `workshop.html` – Experiments and works in progress
+- `editions.html` – Website edition history
+- `about.html` – About the studio
+- `styles.css` – Shared site styling
+- `script.js` – Theme switching and client-side behavior
 
-The site is intentionally organized around inquiry rather than products.
+## Development
+
+The site is fully static and requires no build step.
+
+To preview locally:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+```
+http://localhost:8000
+```
+
+## License
+
+See the repository license for details.
