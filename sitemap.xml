@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://futureproofworks.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://futureproofworks.com/</loc></url>
+  <url><loc>https://futureproofworks.com/questions.html</loc></url>
+  <url><loc>https://futureproofworks.com/investigations.html</loc></url>
+  <url><loc>https://futureproofworks.com/field-notes.html</loc></url>
+  <url><loc>https://futureproofworks.com/publications.html</loc></url>
+  <url><loc>https://futureproofworks.com/workshop.html</loc></url>
+  <url><loc>https://futureproofworks.com/about.html</loc></url>
+</urlset>

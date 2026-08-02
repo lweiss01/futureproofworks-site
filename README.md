@@ -1,28 +1,37 @@
-# Future Proof Works website
+# Future Proof Works v2
 
-A lightweight static homepage for `futureproofworks.com`.
+A book-first static site based on the **1B Vellum & Deep Water** identity direction.
 
-## Preview locally
+## Identity
 
-```bash
-python -m http.server 8080
+- Vellum `#F5F2EA`
+- Linen `#E3DCCB`
+- Deep Water `#1F4E64`
+- Marginalia `#B4501F`
+- Ink `#141A1E`
+- Spectral for editorial voice
+- Archivo for navigation, metadata, and system labels
+
+## Deploy to GitHub Pages
+
+Replace the current repository files with this package, then:
+
+```powershell
+git add .
+git commit -m "Redesign Future Proof Works around 1B identity"
+git push
 ```
 
-Open `http://localhost:8080`.
+GitHub Pages will redeploy automatically.
 
-## Recommended deployment: Cloudflare Pages
+## Site structure
 
-1. Create a GitHub repository such as `futureproofworks-site`.
-2. Push these files to the repository root.
-3. In Cloudflare, open **Workers & Pages** and create a Pages project from the repository.
-4. Leave the build command blank and use `/` as the output directory.
-5. Add `futureproofworks.com` under **Custom domains**.
-6. For the apex domain, Cloudflare will ask you to use Cloudflare DNS and change the nameservers at your registrar.
-7. Add `www.futureproofworks.com` and redirect it to the apex domain.
+- Foreword
+- Questions
+- Investigations
+- Field Notes
+- Publications
+- Workshop
+- About
 
-## Before launch
-
-- Replace the email address if needed.
-- Add links for Saga, NewsThread, and DHM when available.
-- Add a social sharing image later.
-- Review the short biography.
+The site is intentionally organized around inquiry rather than products.
