@@ -6,19 +6,44 @@
 <meta property="og:type" content="website"><meta property="og:url" content="https://futureproofworks.com/">
 <link rel="canonical" href="https://futureproofworks.com/"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#F5F2EA">
+<meta name="theme-color" content="#F5F2EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1A21" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Spectral:opsz,wght@7..72,300;7..72,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem("fpw-theme")||"dark";document.documentElement.setAttribute("data-theme",t)}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
 </head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header">
-<a class="brand" href="index.html"><span class="brand-name">Future Proof Works</span><span class="brand-sub">Research & systems studio · Est. 2024</span></a>
+<a class="brand" href="index.html">
+<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+<circle class="ground" cx="32" cy="32" r="31"/>
+<circle cx="32" cy="32" r="31" fill="none" stroke="currentColor" stroke-width="1" opacity=".18"/>
+<path class="strata" d="M6 52 C 20 52, 24 34, 32 34 S 48 48, 58 30" fill="none" stroke-width="1"/>
+<path class="strata" d="M6 36 C 16 36, 20 12, 32 12 S 44 32, 58 12" fill="none" stroke-width="1"/>
+<path class="thread" d="M6 44 C 18 44, 22 22, 32 22 S 46 40, 58 20" fill="none" stroke-width="2.2"/>
+<circle class="node" cx="32" cy="22" r="3"/>
+</svg>
+<span class="brand-text"><span class="brand-name">Future Proof Works</span><span class="brand-sub">Research &amp; systems studio · Est. 2026</span></span></a>
+<div class="header-tools">
 <nav aria-label="Primary">
 <a href="questions.html">Questions</a><a href="investigations.html">Investigations</a><a href="field-notes.html">Field Notes</a><a href="publications.html">Publications</a><a href="workshop.html">Workshop</a><a href="editions.html">Editions</a><a href="about.html">About</a>
-</nav></header>
+</nav>
+<button class="theme-toggle" type="button" aria-label="Switch between light and dark">
+<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg>
+</button>
+</div></header>
 <main id="main">
-<section class="foreword"><div class="folio">FPW-PL-001 · REV. 2.1</div><p class="kicker">A workshop for systems thinking</p>
+<section class="foreword">
+<svg class="contour-field" viewBox="0 0 1180 320" preserveAspectRatio="none" aria-hidden="true">
+<path d="M0 300 C 220 300, 330 250, 560 250 S 940 272, 1180 224"/>
+<path d="M0 268 C 240 268, 350 208, 580 208 S 960 238, 1180 182"/>
+<path d="M0 236 C 260 236, 370 166, 600 166 S 980 204, 1180 140"/>
+<path d="M0 204 C 280 204, 390 124, 620 124 S 1000 170, 1180 98"/>
+<path d="M0 172 C 300 172, 410 82, 640 82 S 1020 136, 1180 56"/>
+</svg>
+<div class="folio">FPW-PL-001 · REV. 2.1</div><p class="kicker">A workshop for systems thinking</p>
 <h1>Designing systems<br>that survive change.</h1>
 <div class="intro-grid"><p class="intro-large">Future Proof Works is an independent research and systems studio exploring how complex systems preserve understanding as people, technology, and time change.</p>
 <p>Through software, publications, research, and hardware experiments, the studio investigates how ideas and institutions preserve meaning while everything around them continues to change.</p></div>
@@ -48,7 +73,7 @@
 
 <section class="closing-page"><p class="label">Future Proof Works</p><h2>Every project begins with a question.</h2><p>Some become software. Some become essays. Some become books. Some remain experiments.</p><p class="closing-line">They are all different attempts to discover what should survive.</p><p class="record">AUTHORED 2026-08-02 · REV 0002 · CURRENT</p></section>
 </main><footer class="site-footer">
-<div><p class="footer-brand">Future Proof Works</p><p>Research & systems studio.</p></div>
+<div><p class="footer-brand">Future Proof Works</p><p>Research &amp; systems studio.</p></div>
 <div><p class="meta">Current question</p><p class="footer-question">What should survive when everything else changes?</p></div>
 <div class="footer-version"><p>Revision 2.1</p><p>© <span id="year"></span></p></div>
 </footer><script src="script.js"></script>
