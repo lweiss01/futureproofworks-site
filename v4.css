@@ -47,3 +47,29 @@
 .edition-list .edition .record{display:block}
 @media(max-width:900px){.site-footer{grid-template-columns:repeat(2,minmax(0,1fr))}.v4-grid{gap:.8rem}}
 @media(max-width:650px){.v4-hero{padding:3rem 0}.v4-section{padding:2.75rem 0}.v4-section-heading{display:block}.v4-grid,.v4-split{grid-template-columns:1fr}.v4-card{min-height:0}.v4-writing-item{grid-template-columns:1fr}.site-footer{grid-template-columns:1fr}.v4-actions{flex-direction:column;align-items:flex-start}}
+
+
+/* About: invitation to conversation, not a marketing funnel. */
+.v4-contact-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,6vw,6rem);align-items:start}
+.v4-contact-layout h2{max-width:12ch}
+.v4-contact-form{display:grid;gap:1.15rem;max-width:630px}
+.v4-contact-field{display:grid;gap:.4rem}
+.v4-contact-field label{font:600 .77rem/1.45 var(--sans);color:var(--ink)}
+.v4-contact-field input,.v4-contact-field textarea{width:100%;min-height:48px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:0;padding:.85rem .95rem;font:400 1rem/1.5 var(--sans)}
+.v4-contact-field textarea{resize:vertical;min-height:135px}
+.v4-contact-field input::placeholder,.v4-contact-field textarea::placeholder{color:var(--muted);opacity:1}
+.v4-contact-field input:hover,.v4-contact-field textarea:hover{border-color:var(--muted)}
+.v4-contact-field input:focus-visible,.v4-contact-field textarea:focus-visible{outline:2px solid var(--deep);outline-offset:2px}
+.v4-contact-field [aria-invalid="true"]{border-color:var(--rust)}
+.v4-contact-error{font:500 .78rem/1.45 var(--sans);color:var(--rust)}
+.v4-contact-error:empty{display:none}
+.v4-contact-success{display:none;font:500 1rem/1.5 var(--sans);color:var(--deep);border-left:2px solid var(--rust);padding:.9rem 1.1rem;background:var(--panel);margin-bottom:1rem}
+.v4-contact-success:not(:empty){display:block}
+.v4-contact-submit{justify-self:start;min-height:46px;padding:.8rem 1.25rem;border:1px solid var(--deep);background:var(--deep);color:var(--vellum);font:600 .8rem/1.25 var(--sans);cursor:pointer}
+.v4-contact-submit:hover{background:var(--rust);border-color:var(--rust);color:var(--vellum)}
+.v4-contact-submit:disabled{cursor:wait;opacity:.65}
+.v4-contact-submit:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+.v4-contact-privacy{font:400 .78rem/1.55 var(--sans);color:var(--muted);max-width:54ch;margin:0}
+.v4-contact-privacy a{color:var(--deep);text-underline-offset:3px}
+.v4-contact-honeypot{position:absolute!important;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:780px){.v4-contact-layout{grid-template-columns:1fr;gap:1.5rem}.v4-contact-layout h2{max-width:unset}}
