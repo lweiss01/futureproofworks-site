@@ -10,6 +10,7 @@
 .v4-button-secondary{background:transparent;color:var(--deep)}
 .v4-button-secondary:hover{color:var(--vellum)}
 .v4-section{padding:4rem 0;border-bottom:1px solid var(--line)}
+.v4-reading > *{max-width:760px}
 .v4-section-heading{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;margin-bottom:1.6rem}
 .v4-section-heading h2{margin:0;max-width:740px}
 .v4-intro{font-size:1.1rem;max-width:760px;color:var(--muted)}
